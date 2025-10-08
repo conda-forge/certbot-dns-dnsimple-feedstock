@@ -1,6 +1,6 @@
 context:
   name: certbot-dns-dnsimple
-  version: "5.0.0"
+  version: "5.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: ecb0117a7034dc8a101fc2da16857db79f92903b671d929ba064c0b6f0730245
+  sha256: 711ca820227d766b3c69c02f6ba137b6f7653029f9b770225081f6728a48f00d
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
 tests:
   - python:
       imports:
-      - certbot_dns_dnsimple
+        - certbot_dns_dnsimple
       pip_check: true
       python_version: ${{ python_min }}.*
 
