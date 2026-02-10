@@ -1,6 +1,6 @@
 context:
   name: certbot-dns-dnsimple
-  version: "5.3.0"
+  version: "5.3.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 0aedb176026f22977793bc9d206d497f9d6b00dd0be68274287fc40891594e02
+  sha256: 42bc6e85a26137a147bc03ae97c7df6c5da888a002f888f0e23d53319e8c8e17
 
 build:
   noarch: python
